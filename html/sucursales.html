@@ -10,11 +10,38 @@
 <body>
     <!--banner principal-->
     <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="../imagenes/man.jpg" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="productos.html">Productos</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Nosotros
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="sucursales.html">sucursales</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="nosotros.html">Redes sociales</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--SE COMENTO ESTA PARTE DEL CODIGO POR QUE SE AGREGO EL MENU HAMBURGUESA 
         <div class="container-fluid text-center">
             <div class="row nav-row">
-                <div class="col"><a href="productos.html">productos</a></div>
-                <div class="col"><a href="sucursales.html">sucursales</a></div>
-                <div class="col"><a href="nosotros.html">nosotros</a></div>
+                <div class="col"><a href="../html/productos.html">productos</a></div>
+                <div class="col"><a href="../html/sucursales.html">sucursales</a></div>
+                <div class="col"><a href="../html/nosotros.html">nosotros</a></div>
                 <div class="col"> <a href="../index.html">inicio</a></div>
             </div>
         </div>
@@ -23,21 +50,30 @@
                 <div class="col-4">
                     <img src="../imagenes/logo2_inspyrenet.png" alt="logo" class="img-fluid">
                 </div>
-            <div class="col-8 align-self-center">
-                <h1>manzana mordida</h1>
+                <div class="col-8 align-self-center">
+                    <h1>manzana mordida</h1>
+                </div>
             </div>
-            </div>
-        </div>
+        </div> --> 
     
     </header>
     <main>
-        <ul>
-            <!--son 3 direccions inventadas jajaja-->
-            <li>-sucursal adrogue <br>av irigoyen 13500</li> 
-            <li>-sucursal lanus <br> av irigoyen 8300</li> 
-            <li>-sucursal banfield <br>av irigoyen 9500</li> 
-            <li>-sucursal lomas de zamora <br>av irigoyen 11200</li>
-        </ul>
+        <div class="sucursales-container">
+            <div class="columna">
+                <h2>Sucursales</h2>
+                <p>adrogue</p>
+                <p>lanus</p>
+                <p>banfield</p>
+                <p>lomas de zamora</p>
+            </div>
+            <div class="columna">
+                <h2>Direccion</h2>
+                <p>av yrigoyen 13500</p>
+                <p>av yrigoyen 8300</p>
+                <p>av yrigoyen 9500</p>
+                <p>av yrigoyen 11200</p>
+            </div>
+        </div>
         <img src="../imagenes/iphone16colores.png" alt="colores">
         <h3>registrate y recibi las mejores ofertas </h3>
         <form  action="submit.html"  method="post" > 
