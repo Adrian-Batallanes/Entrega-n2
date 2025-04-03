@@ -211,6 +211,7 @@ p {
         padding: 10px;
     }
     .navbar{
+        font-size: 15px;
         flex-direction: row;
         justify-content: center;
     }
@@ -234,6 +235,9 @@ p {
     }
     .img-modelo{
     width: 50vh;
+    }
+    .lista-flex{
+        font-size: 20px;
     }
 }
 /* en el vs este css se veia perfecto tanto en laptop como moviles y tablet no se por que al cargarlos a github se veia totalmente diferente tamaño mucho mas grande */
