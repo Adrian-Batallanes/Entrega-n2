@@ -6,6 +6,8 @@
 body {
     background-color: rgb(116, 206, 212);
     text-align: center;
+    margin: 0;
+    padding: 5px;
 
 }
 h1 {
@@ -62,7 +64,7 @@ h3{
     width: 700px;
     height: 500px;
 }
-/*
+/* se comento esta parte por que la habia realizado antes de poner el menu hambuerguesa
 .col a{
     text-decoration: none;
     font-size: 30px;
@@ -131,6 +133,107 @@ p {
     font-size: 25px;
     margin: 10px ; 
 }
-@media  {
+.navbar{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+.contenedor-principal{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.navbar-brand{
+    display: grid;
+    justify-content: space-between;
+
+}
+
+@media (min-width: 768px) and (max-width:1023px){
+    .navbar .contenedor-principal {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .navbar-brand{
+        grid-template-columns: 1fr;
     
+    }
+    .contenedor-principal{
+        flex-direction: column;
+    }
+    .contenedor-principal img{
+        align-items: center;
+        width:50vh;
+    }
+    .img-colores{
+        width: 50vh;
+    }
+}
+@media (max-width:767px){
+    body{
+        font-size: 16px;
+        padding: 10px;
+    }
+    .navbar{
+        flex-direction:row;
+        justify-content: space-between;
+        margin:0;
+        padding: auto;
+        font-size: larger;
+    }
+    .navbar img{
+        width: 50vh;
+    }
+    .navbar-brand{
+    width: 50vh;
+    justify-content: center;
+    margin-top: 10px;
+    }
+    .contenedor-principal{
+        flex-direction: column;
+    }
+    .contenedor-principal img{
+        align-items: center;
+        width:50vh;
+    }
+    .img-colores{
+        width: 50vh;
+    }
+    .img-modelo{
+
+    width: 50vh;
+    }
+}
+@media (min-width:1024px){
+    body{
+        font-size: 20px;
+        padding: 10px;
+    }
+    .navbar{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .navbar img{
+        width: 60vh;
+    }
+    .navbar-brand{
+        width: 60vh;
+        justify-content: center;
+        margin-top: 5px;
+    }
+    .contenedor-principal{
+        flex-direction: column;
+    }
+    .contenedor-principal img{
+        align-items: center;
+        width: 50vh;
+    }
+    .img-colores{
+        width: 50vh;
+    }
+    .img-modelo{
+
+    width: 50vh;
+    }
 }
