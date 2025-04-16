@@ -1,249 +1,240 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+
 body {
     background-color: rgb(116, 206, 212);
     text-align: center;
-    margin: 0;
     padding: 5px;
-
+    font-size: 16px;
 }
+
+h1, h2, h3, p, ul, ol {
+    text-transform: uppercase;
+    text-align: center;
+}
+
 h1 {
-    color:darkmagenta;
-    font-size:2cm;
+    color: darkmagenta;
+    font-size: 2cm;
     margin: 40px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    text-transform: uppercase;
-    text-align: center;
-    text-decoration-line: none;
-
 }
-h2 {
-    padding:30px;
-    color:black;
+h2, h3 {
     font-size: 2em;
-    text-transform: uppercase
+    color: black;
+    padding: 30px 0;
 }
-p {
+
+p, ul, ol {
     color: rgb(5, 5, 103);
-    text-transform: uppercase;
-    text-align: center;
     font-size: 2em;
-    text-decoration: double;
 }
-ul{
-    font-size: 2em;
-    text-transform: uppercase;
-    text-decoration: none;
-    text-align: center; 
-}
-ol{
-    font-size: 2em;
-    text-transform: uppercase;
-    text-decoration: none;
-    text-align: center; 
-    list-style: none;
-}
-h3{
-    color: black;
-    font-size: 2em;
-    text-align: center;
-    text-transform: uppercase
-    
-    
-}
-.link-youtube{
-    font-size: 2em;
-    text-transform: uppercase;
-    text-align: center;
-    text-decoration: none;
-    }
-.imagen-modelos {
-    width: 700px;
-    height: 500px;
-}
-/* se comento esta parte por que la habia realizado antes de poner el menu hambuerguesa
-.col a{
-    text-decoration: none;
-    font-size: 30px;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: black;
-}
-.nav-row{
-    display: flex;
-    background-color: rgba(0, 255, 255, 0.171);
-    padding: 15px;
-    margin: 10px;
 
+ul, ol {
+    list-style: none;
+    text-decoration: none;
 }
-form{
-    display: flex;
-    margin: 20px;
-    padding-left: 20%;
-    
-}*/
-.lista-flex{
+
+.link-youtube {
+    font-size: 2em;
+    text-decoration: none;
+}
+
+
+.imagen-modelos,
+.img-colores,
+.img-modelo {
+    width: 50vh;
+    height: auto;
+}
+
+
+.navbar {
     display: flex;
     flex-direction: column;
-    list-style: none;
-    padding: 0;
-    gap: 10px;
-    
+    align-items: center;
+    padding: 10px;
 }
-.lista-flex a{
-    text-decoration: none;
 
+.navbar-brand {
+    display: grid;
+    justify-content: space-between;
 }
-.botones-container{
+
+.botones-container {
     display: flex;
     justify-content: center;
     gap: 20px;
 }
-.boton-redes{
+
+.boton-redes {
     flex: 1;
     max-width: 150px;
 }
-.boton-redes img{
+
+.boton-redes img {
     width: 100%;
     height: auto;
     display: block;
     padding: 20px;
 }
+
 .sucursales-container {
-    display: flex; 
-    justify-content: center; 
-    gap: 50px; 
+    display: flex;
+    justify-content: center;
+    gap: 50px;
     text-align: center;
 }
+
 .columna {
     display: flex;
     flex-direction: column;
-    align-items: center; 
-}
-
-h2 {
-    font-size: 25px;
-    
-}
-
-p {
-    font-size: 25px;
-    margin: 10px ; 
-}
-.navbar{
-    display:flex;
-    flex-direction: column;
     align-items: center;
-    padding: 10px;
 }
-.contenedor-principal{
+
+.lista-flex {
     display: flex;
     flex-direction: column;
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+}
+
+.lista-flex a {
+    text-decoration: none;
+}
+
+
+.contenedor-principal {
     margin-top: 10px;
 }
-.navbar-brand{
-    display: grid;
-    justify-content: space-between;
 
-}
+@media (min-width: 1024px) {
+    body {
+    font-size: 20px;
+    }
 
-@media (min-width: 768px) and (max-width:1023px){
-    .navbar .contenedor-principal {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .navbar-brand{
-        grid-template-columns: 1fr;
-    
-    }
-    .contenedor-principal{
-        flex-direction: column;
-    }
-    .contenedor-principal img{
-        align-items: center;
-        width:50vh;
-    }
-    .img-colores{
-        width: 50vh;
-    }
-}
-@media (max-width:767px){
-    body{
-        font-size: 16px;
-        padding: 10px;
-    }
-    .navbar{
-        flex-direction:row;
-        justify-content: space-between;
-        margin:0;
-        padding: auto;
-        font-size: larger;
-    }
-    .navbar img{
-        width: 50vh;
-    }
-    .navbar-brand{
-    width: 50vh;
+    .navbar {
+    flex-direction: row;
     justify-content: center;
-    margin-top: 10px;
+    font-size: 15px;
     }
-    .contenedor-principal{
-        flex-direction: column;
-    }
-    .contenedor-principal img{
-        align-items: center;
-        width:50vh;
-    }
-    .img-colores{
-        width: 50vh;
-    }
-    .img-modelo{
 
-    width: 50vh;
+    .navbar img,
+    .navbar-brand {
+    width: 60vh;
+    margin-top: 5px;
     }
-}
-@media (min-width:1024px){
-    body{
-        font-size: 20px;
-        padding: 10px;
+    main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 70vh 30vh;
+    width: 100vw;
+    height: 100vh;
     }
-    .navbar{
-        font-size: 15px;
-        flex-direction: row;
-        justify-content: center;
+
+    .video-container {
+    grid-column: 1 / 3;
+    width: 100%;
+    height: 100%;
     }
-    .navbar img{
-        width: 60vh;
-    }
-    .navbar-brand{
-        width: 60vh;
-        justify-content: center;
-        margin-top: 5px;
-    }
-    .contenedor-principal{
-        flex-direction: column;
-    }
-    .contenedor-principal img{
-        align-items: center;
-        width: 50vh;
+
+    .video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     }
     .img-colores{
-        width: 50vh;
-    }
-    .img-modelo{
-    width: 50vh;
-    }
-        .info{
-        font-size: 10px;
-    }
-    h3{
-        font-size: 20px;
+        padding: 10px;
+        height: 70%;
+        width: 70%;
     }
     .lista-flex{
-        font-size: 15px;    
+        padding: 50px;
+    }
+
+    .bienvenida, .info {
+        display: none;
+    padding: 2rem;
+    }
+
+    .formulario {
+        grid-column: 1 /3;
+    padding: 2rem;
+    }
+
+    .colores {
+    display: none;
     }
 }
-/* en el vs este css se veia perfecto tanto en laptop como moviles y tablet no se por que al cargarlos a github se veia totalmente diferente tamaño mucho mas grande */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    }
+
+    .contenedor-principal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    }
+
+    .contenedor-principal img {
+    width: 50vh;
+    }
+
+    /*.video-container {
+    display: none;*/
+    .video-container {
+        grid-column: 1 / 3;
+        width: 100%;
+        height: 100%;
+        }
+    
+        .video-container video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        }
+
+    }
+
+    .info{
+        display: none;
+    }
+    .colores{
+        padding: 30px;
+    }
+    .formulario{
+        grid-column: 1 /3;
+    }
+
+
+
+@media (max-width: 767px) {
+    .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    }
+
+    .navbar img,
+    .navbar-brand,
+    .contenedor-principal img {
+    width: 50vh;
+    margin-top: 10px;
+    }
+
+    .contenedor-principal {
+    display: flex;
+    flex-direction: column;
+    }
+
+    .video-container {
+    display: none;
+    }
+}
