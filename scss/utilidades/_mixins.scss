@@ -1,3 +1,4 @@
+
 @mixin media-sm {
   @media (max-width: 767px) {
     @content;
@@ -21,6 +22,7 @@
     @content;
   }
 }
+
 
 @mixin grid-imagenes {
   .img-diseño-grid {
@@ -48,5 +50,44 @@
       height: 100%;
       object-fit: cover;
     }
+  }
+}
+
+
+@mixin fadeIn($duration: 1s, $delay: 0s) {
+  animation: fadeInAnimation $duration ease-out $delay forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@mixin slideUp($duration: 0.8s, $delay: 0s) {
+  animation: slideUpAnimation $duration ease-out $delay forwards;
+}
+
+@keyframes slideUpAnimation {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+@mixin scaleOnHover($scale: 1.1, $duration: 0.3s) {
+  transition: transform $duration ease-in-out;
+  
+  &:hover {
+    transform: scale($scale);
   }
 }

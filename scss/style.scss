@@ -133,6 +133,26 @@ a {
 }
 
 
+.card-beneficio {
+opacity: 0;
+@include slideUp(0.8s, 0.2s); 
+img {
+    @include scaleOnHover(1.1, 0.3s); 
+}
+}
+
+
+.card-beneficio:nth-child(1) {
+@include slideUp(0.8s, 0.2s);
+}
+
+.card-beneficio:nth-child(2) {
+@include slideUp(0.8s, 0.4s);
+}
+
+.card-beneficio:nth-child(3) {
+@include slideUp(0.8s, 0.6s);
+}
 
 @include media-sm {
     .botones-container .col-4 {
