@@ -48,13 +48,31 @@
 
     <section class="mb-5">
       <h2>Imágenes del iPhone 16 Plus</h2>
-      <div class="row">
-        <div class="col-md-6 mb-3">
-          <img src="../imagenes/iphone16_bria.png" alt="iPhone 16 Plus de frente" class="img-fluid rounded shadow" />
+      <!-- las imagenes son a modo ejemplo por las dudas jajaja -->
+
+      <div id="carouselIphone16Plus" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner rounded shadow">
+          <div class="carousel-item active">
+            <img src="../imagenes/16blanco.jpg" class="d-block w-100 img-fluid" alt="iPhone 16 Plus color blanco">
+          </div>
+          <div class="carousel-item">
+            <img src="../imagenes/16azul.jpg" class="d-block w-100 img-fluid" alt="iPhone 16 Plus color azul">
+          </div>
+          <div class="carousel-item">
+            <img src="../imagenes/16rosa.jpg" class="d-block w-100 img-fluid" alt="iPhone 16 Plus color rosa">
+          </div>
+          <div class="carousel-item">
+            <img src="../imagenes/16negro.jpg" class="d-block w-100 img-fluid" alt="iPhone 16 Plus color negro">
+          </div>
         </div>
-        <div class="col-md-6 mb-3">
-          <img src="../imagenes/iphone16colores.png" alt="iPhone 16 Plus parte trasera" class="img-fluid rounded shadow" />
-        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselIphone16Plus" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselIphone16Plus" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
       </div>
     </section>
 
@@ -73,7 +91,56 @@
       </table>
     </section>
 
+    <section class="mb-5">
+      <h3 class="precio">Precio: $1.499.999</h3>
+
+      <div class="accordion mb-3" id="accordionPagos2">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingPago2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePago2" aria-expanded="false" aria-controls="collapsePago2">
+              Medios de Pago
+            </button>
+          </h2>
+          <div id="collapsePago2" class="accordion-collapse collapse" aria-labelledby="headingPago2" data-bs-parent="#accordionPagos2">
+            <div class="accordion-body">
+              <ul>
+                <li>Tarjeta de crédito: 12 cuotas sin interés</li>
+                <li>Tarjeta de crédito: 6 cuotas sin interés</li>
+                <li>Efectivo: 10% de descuento</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion mb-3" id="accordionColores2">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingColor2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseColor2" aria-expanded="false" aria-controls="collapseColor2">
+              Colores Disponibles
+            </button>
+          </h2>
+          <div id="collapseColor2" class="accordion-collapse collapse" aria-labelledby="headingColor2" data-bs-parent="#accordionColores2">
+            <div class="accordion-body">
+              <ul class="lista-colores d-flex flex-wrap gap-2">
+                <li>Rosa</li>
+                <li>Azul</li>
+                <li>Blanco</li>
+                <li>Negro</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <form class="d-flex flex-column flex-md-row align-items-center gap-3">
+        <label for="cantidadPlus" class="form-label mb-0">Cantidad:</label>
+        <input type="number" id="cantidadPlus" name="cantidadPlus" value="1" min="1" class="form-control w-auto" />
+        <button type="button" class="btn btn-success">Agregar al carrito</button>
+      </form>
+    </section>
   </main>
+
   <footer class=" text-grey text-center py-3">
     <p>&copy; 2025 Manzana Mordida</p>
   </footer>
@@ -81,3 +148,4 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
