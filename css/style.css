@@ -179,6 +179,16 @@ button:hover {
   height: auto;
 }
 
+.icon-size {
+  max-width: 150px;
+  height: auto;
+}
+
+.carrusel-iphone {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
 .botones-container {
   margin-top: 2rem;
 }

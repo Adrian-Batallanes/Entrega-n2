@@ -1,7 +1,7 @@
-@import "utilidades/reset";
-@import "utilidades/variables";
-@import "utilidades/mixins";
-@import "utilidades/video";
+@use "utilidades/reset" as *;
+@use "utilidades/variables" as *;
+@use "utilidades/mixins" as * ;
+@use "utilidades/video" as *;
 
 body {
     font-family: Arial, sans-serif;
@@ -128,7 +128,15 @@ a {
     max-width: 120px;
     height: auto;
 }
+.icon-size {
+    max-width: 150px; 
+    height: auto;    
+}
 
+.carrusel-iphone {
+    max-width: 700px;
+    margin: 0 auto;
+}
 .botones-container {
     margin-top: 2rem;
 }
