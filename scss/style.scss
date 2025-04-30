@@ -229,7 +229,7 @@ a {
 }
 
 .icon-size {
-    max-width: 150px;
+    max-width: 100px;
     height: auto;
 }
 
@@ -332,10 +332,16 @@ a {
 }
 
 
+
 .productos {
     padding: 2rem;
     background-color: $blanco;
     text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 1rem auto;
+    max-width: 1200px;
+}
 
     .contenedor-productos {
         display: flex;
@@ -372,5 +378,5 @@ a {
             }
         }
     }
-}
+
 
