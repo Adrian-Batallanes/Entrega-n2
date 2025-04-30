@@ -97,46 +97,73 @@
     <section class="mb-5">
       <h3 class="precio">Precio: $1.499.999</h3>
 
-      <div class="accordion mb-3" id="accordionPagos2">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingPago2">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePago2" aria-expanded="false" aria-controls="collapsePago2">
-              Medios de Pago
-            </button>
-          </h2>
-          <div id="collapsePago2" class="accordion-collapse collapse" aria-labelledby="headingPago2" data-bs-parent="#accordionPagos2">
-            <div class="accordion-body">
-              <ul>
-                <li>Tarjeta de crédito: 12 cuotas sin interés</li>
-                <li>Tarjeta de crédito: 6 cuotas sin interés</li>
-                <li>Efectivo: 10% de descuento</li>
-              </ul>
-            </div>
-          </div>
+     
+    <!-- Accordion para los medios de pago -->
+<div class="accordion mb-3" id="accordionPagos1">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingPago1">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePago1" aria-expanded="false" aria-controls="collapsePago1">
+        Medios de Pago
+      </button>
+    </h2>
+    <div id="collapsePago1" class="accordion-collapse collapse" aria-labelledby="headingPago1" data-bs-parent="#accordionPagos1">
+      <div class="accordion-body">
+        <div class="d-flex flex-column gap-2">
+          <label class="form-check-label d-flex align-items-center gap-2">
+            <input type="radio" name="pago" class="btn-check" id="pago12" autocomplete="off">
+            <span class="rounded-circle border border-dark" style="width: 16px; height: 16px;"></span>
+            Tarjeta de crédito: 12 cuotas sin interés
+          </label>
+
+          <label class="form-check-label d-flex align-items-center gap-2">
+            <input type="radio" name="pago" class="btn-check" id="pago6" autocomplete="off">
+            <span class="rounded-circle border border-dark" style="width: 16px; height: 16px;"></span>
+            Tarjeta de crédito: 6 cuotas sin interés
+          </label>
+
+          <label class="form-check-label d-flex align-items-center gap-2">
+            <input type="radio" name="pago" class="btn-check" id="pagoEfectivo" autocomplete="off">
+            <span class="rounded-circle border border-dark" style="width: 16px; height: 16px;"></span>
+            Efectivo: 10% de descuento
+          </label>
         </div>
       </div>
-
-      <div class="accordion mb-3" id="accordionColores2">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingColor2">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseColor2" aria-expanded="false" aria-controls="collapseColor2">
-              Colores Disponibles
-            </button>
-          </h2>
-          <div id="collapseColor2" class="accordion-collapse collapse" aria-labelledby="headingColor2" data-bs-parent="#accordionColores2">
-            <div class="accordion-body">
-              <ul class="lista-colores d-flex flex-wrap gap-2">
-                <li>Rosa</li>
-                <li>Azul</li>
-                <li>Blanco</li>
-                <li>Negro</li>
-              </ul>
-            </div>
-          </div>
+    </div>
+  </div>
+</div>
+<!-- Accordion para los colores disponibles -->
+<div class="accordion mb-3" id="accordionColores1">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingColor1">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseColor1" aria-expanded="false" aria-controls="collapseColor1">
+        Colores Disponibles
+      </button>
+    </h2>
+    <div id="collapseColor1" class="accordion-collapse collapse" aria-labelledby="headingColor1" data-bs-parent="#accordionColores1">
+      <div class="accordion-body">
+        <div class="d-flex gap-3">
+          <label class="form-check-label">
+            <input type="radio" name="color" class="btn-check" id="colorRosa" autocomplete="off">
+            <span class="rounded-circle d-inline-block" style="width: 20px; height: 20px; background-color: pink; border: 1px solid #ccc; cursor: pointer;"></span>
+          </label>
+          <label class="form-check-label">
+            <input type="radio" name="color" class="btn-check" id="colorAzul" autocomplete="off">
+            <span class="rounded-circle d-inline-block" style="width: 20px; height: 20px; background-color: blue; border: 1px solid #ccc; cursor: pointer;"></span>
+          </label>
+          <label class="form-check-label">
+            <input type="radio" name="color" class="btn-check" id="colorBlanco" autocomplete="off">
+            <span class="rounded-circle d-inline-block" style="width: 20px; height: 20px; background-color: white; border: 1px solid #ccc; cursor: pointer;"></span>
+          </label>
+          <label class="form-check-label">
+            <input type="radio" name="color" class="btn-check" id="colorNegro" autocomplete="off">
+            <span class="rounded-circle d-inline-block" style="width: 20px; height: 20px; background-color: black; border: 1px solid #ccc; cursor: pointer;"></span>
+          </label>
         </div>
       </div>
-
-      <form class="d-flex flex-column flex-md-row align-items-center gap-3">
+    </div>
+  </div>
+</div>
+  <form class="d-flex flex-column flex-md-row align-items-center gap-3">
         <label for="cantidadPlus" class="form-label mb-0">Cantidad:</label>
         <input type="number" id="cantidadPlus" name="cantidadPlus" value="1" min="1" class="form-control w-auto" />
         <button type="button" class="btn btn-dark btn-success">Agregar al carrito</button>
