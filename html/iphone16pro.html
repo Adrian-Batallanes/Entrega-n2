@@ -107,39 +107,34 @@
       <h3 class="precio">Precio: $1.799.999</h3>
 
     <!-- Accordion para los medios de pago -->
-    <div class="accordion mb-3" id="accordionPagos1">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingPago1">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePago1" aria-expanded="false" aria-controls="collapsePago1">
-            Medios de Pago
-          </button>
-        </h2>
-        <div id="collapsePago1" class="accordion-collapse collapse" aria-labelledby="headingPago1" data-bs-parent="#accordionPagos1">
-          <div class="accordion-body">
-            <div class="d-flex flex-column gap-2">
-              <label class="form-check-label d-flex align-items-center gap-2">
-                <input type="radio" name="pago" class="btn-check" id="pago12" autocomplete="off">
-                <span class="rounded-circle border border-dark" style="width: 16px; height: 16px;"></span>
-                Tarjeta de crédito: 12 cuotas sin interés
-              </label>
-    
-              <label class="form-check-label d-flex align-items-center gap-2">
-                <input type="radio" name="pago" class="btn-check" id="pago6" autocomplete="off">
-                <span class="rounded-circle border border-dark" style="width: 16px; height: 16px;"></span>
-                Tarjeta de crédito: 6 cuotas sin interés
-              </label>
-    
-              <label class="form-check-label d-flex align-items-center gap-2">
-                <input type="radio" name="pago" class="btn-check" id="pagoEfectivo" autocomplete="off">
-                <span class="rounded-circle border border-dark" style="width: 16px; height: 16px;"></span>
-                Efectivo: 10% de descuento
-              </label>
-            </div>
-          </div>
+<div class="accordion mb-3" id="accordionPagos1">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingPago1">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePago1" aria-expanded="false" aria-controls="collapsePago1">
+        Medios de Pago
+      </button>
+    </h2>
+    <div id="collapsePago1" class="accordion-collapse collapse" aria-labelledby="headingPago1" data-bs-parent="#accordionPagos1">
+      <div class="accordion-body">
+        <div class="d-flex flex-column gap-2">
+          <label class="form-check-label d-flex align-items-center gap-2" style="cursor: pointer;">
+            <input type="radio" name="pago" class="form-check-input" style="margin: 0;">
+            Tarjeta de crédito: 12 cuotas sin interés
+          </label>
+          <label class="form-check-label d-flex align-items-center gap-2" style="cursor: pointer;">
+            <input type="radio" name="pago" class="form-check-input" style="margin: 0;">
+            Tarjeta de crédito: 6 cuotas sin interés
+          </label>
+          <label class="form-check-label d-flex align-items-center gap-2" style="cursor: pointer;">
+            <input type="radio" name="pago" class="form-check-input" style="margin: 0;">
+            Efectivo: 10% de descuento
+          </label>
         </div>
-      </div>
+        </div>
     </div>
-    
+  </div>
+</div>
+
     <!-- Accordion para los colores disponibles -->
     <div class="accordion mb-3" id="accordionColores1">
       <div class="accordion-item">
