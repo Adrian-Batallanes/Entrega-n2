@@ -279,8 +279,12 @@ button:hover {
 }
 
 .carrusel-iphone {
-  max-width: 700px;
+  max-width: 80%;
   margin: 0 auto;
+}
+.carrusel-iphone .carousel-inner .carousel-item img {
+  max-height: 400px;
+  object-fit: contain;
 }
 
 .botones-container {
