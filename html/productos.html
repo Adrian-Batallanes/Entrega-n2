@@ -20,7 +20,7 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <!-- Logo de la marca -->
-                <a class="navbar-brand" href="#"><img src="../img/logoverdesinfondo-removebg-preview.png" alt="logo" width="100"></a>
+                <a class="navbar-brand" href="../index.html"><img src="../img/logoverdesinfondo-removebg-preview.png" alt="logo" width="100"></a>
                 <!-- Botón de menú para dispositivos móviles -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -54,6 +54,46 @@
     </header>
 
     <main>
+        <section class="productos">
+            <div class="contenedor-productos">
+
+            <div class="producto">
+                <a href="../html/iphone16.html" target="_self">
+                <img src="../img/16.png" alt="iPhone 16">
+                </a>
+                <h3>iPhone 16</h3>
+                <p class="precio">$1.299.999</p>
+            </div>
+    
+            <div class="producto">
+                <a href="../html/iphone16plus.html" target="_self">
+                <img src="../img/16plus.png" alt="iPhone 16 Plus">
+                </a>
+                <h3>iPhone 16 Plus</h3>
+                <p class="precio">$1.499.999</p>
+            </div>
+    
+            <div class="producto">
+                <a href="../html/iphone16pro.html" target="_blank">
+                <img src="../img/16promax.png" alt="iPhone 16 Pro">
+                </a>
+                <h3>iPhone 16 Pro</h3>
+                <p class="precio">$1.799.999</p>
+            </div>
+
+            <div class="producto">
+                <a href="../html/iphone16promax.html" target="_blank">
+                <img src="../img/16promax.png" alt="iPhone 16 Pro Max">
+                </a>
+                <h3>iPhone 16 Pro Max</h3>
+                <p class="precio">$1.999.999</p>
+            </div>
+        
+            </div>
+        </section>
+        <div class="texto-promocional">
+            <p class="text-center my-4">El iPhone 16 Pro Max combina potencia y elegancia en un solo dispositivo. Con su pantalla Super Retina XDR de 6.7 pulgadas y una cámara de 48 MP, captura fotos impresionantes con increíble detalle. El chip A17 Bionic asegura un rendimiento excepcional, mientras que su batería de larga duración te mantiene conectado todo el día. Además, su diseño resistente al agua y al polvo lo convierte en el smartphone ideal para los más exigentes. La tecnología del futuro, ahora en la palma de tu mano.</p>
+        </div>
         <!-- Sección con imágenes principales y secundarias -->
         <div class="img-diseño-grid">
             <img src="../img/productosopcion3.jpg" alt="img-ilustracion" class="imagen-principal">
@@ -62,25 +102,7 @@
                 <img src="../img/bannerlaptop2.jpeg" alt="img-secundaria-2">
             </div>
         </div>
-        <!-- Navegación con lista de modelos de iPhone -->
-        <nav>
-            <ul class="lista-flex">
-                <!-- Enlaces a las páginas de los diferentes modelos de iPhone -->
-                <li class="lista-modelo"><a href="iphone16.html" target="_self">iphone 16</a></li>
-                <li class="lista-modelo"><a href="iphone16plus.html" target="_self">iPhone 16 Plus</a></li>
-                <li class="lista-modelo"><a href="iphone16pro.html" target="_blank">iPhone 16 Pro</a></li>
-                <li class="lista-modelo"><a href="iphone16promax.html" target="_blank">iPhone 16 Pro Max</a></li>
-            </ul>
-        </nav>
-        <div class="text-center mt-8">
-            <img class="img-colores img-fluid" src="../img/image-6-980x572.png" alt="comparativa modelos iphone 16">
-        </div>
-
-        <!-- Imagen principal de iPhone 16 -->
-        <div class="text-center mt-4">
-            <img class="img-colores img-fluid" src="../img/16azul1.jpg" alt="iphone 16">
-        </div>
-
+        
         <!-- Sección de registro para recibir ofertas -->
         <h3 class="text-center mt-5">¡Regístrate y recibe las mejores ofertas!</h3>
         <!-- Formulario de registro -->
@@ -92,7 +114,7 @@
             <input type="text" name="apellido" required placeholder="Apellido" class="form-control my-2">
             <input type="date" required placeholder="Fecha de nacimiento" class="form-control my-2">
             <input type="password" name="contraseña_usuario" required placeholder="Contraseña" class="form-control my-2">
-            <input type="submit" required value="Enviar" class="btn btn-primary mt-3">
+            <input type="submit" required value="Enviar" class="btn btn-dark mt-3">
         </form>
     </main>
 
