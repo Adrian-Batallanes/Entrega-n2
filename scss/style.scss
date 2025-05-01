@@ -196,7 +196,7 @@ a {
 
 .imagenes-secundarias {
     display: none;
-
+//no se por que razon profe pero no pude aplicar alas img secundarias los bordes redondeados 
     @include media-md {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -377,5 +377,4 @@ a {
             }
         }
     }
-
 
